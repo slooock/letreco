@@ -9,6 +9,10 @@
   align-items: center;
 }
 
+.app-container > div > .subTitle {
+  color: #b4b4b4;
+}
+
 .teclado {
   width: 100%;
 }
