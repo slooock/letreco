@@ -18,7 +18,7 @@ import EndGameScreen from "./EndGameScreen";
 import GuessList from "./GuessList";
 import Keyboard from "./Keyboard";
 
-export const WORD_SIZE = 5;
+export let WORD_SIZE = 6;
 export const GUESS_LIST_SIZE = 6;
 
 export const KEY_BACKSPACE = "Backspace";
@@ -71,7 +71,12 @@ function Game() {
   const [isEndGameScreenOpen, setIsEndGameScreenOpen] =
     useState<boolean>(false);
 
-  const dailyWord = useMemo<DailyWord>(() => getDailyWord(), []);
+  const dailyWord = useMemo<DailyWord>(() => {
+    let word = getDailyWord();
+    WORD_SIZE = word.word.length;
+
+    return word;
+  }, []);
 
   const updateStatistics = (isGameWon: boolean, guessesAmount: number) => {
     const newStreak = isGameWon ? statistics.currentStreak + 1 : 0;
@@ -301,6 +306,7 @@ function Game() {
         />
       )}
 
+      <div className="mb-5">{dailyWord.question}</div>
       <div className="mb-4">
         <GuessList guesses={guesses} />
       </div>

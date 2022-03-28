@@ -9,6 +9,10 @@
   align-items: center;
 }
 
+.fullw {
+  width: 100%;
+}
+
 .app-container > div > .subTitle {
   color: #b4b4b4;
 }

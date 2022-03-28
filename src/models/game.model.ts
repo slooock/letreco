@@ -1,12 +1,12 @@
 import { KeyboardLetterStates } from ".";
 
 export type GuessLetterState =
-  'typing' |
-  'wrong' |
-  'displaced' |
-  'right' |
-  'disabled' |
-  'wordlistError';
+  | "typing"
+  | "wrong"
+  | "displaced"
+  | "right"
+  | "disabled"
+  | "wordlistError";
 
 export interface GuessLetter {
   letter: string;
@@ -17,6 +17,8 @@ export interface DailyWord {
   edition: string;
   date: string;
   word: string;
+  question: string;
+  response: string;
 }
 
 export interface DailyWordDatabase {

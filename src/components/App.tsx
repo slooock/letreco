@@ -37,7 +37,9 @@ function App() {
               />
             </div>
           ) : (
-            <Game />
+            <div className="fullw">
+              <Game />
+            </div>
           )}
         </div>
       </GlobalSettingsContext.Provider>

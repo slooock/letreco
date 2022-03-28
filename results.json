@@ -1,0 +1,253 @@
+{
+	"kics_version": "v1.5.4",
+	"files_scanned": 182,
+	"files_parsed": 182,
+	"files_failed_to_scan": 0,
+	"queries_total": 328,
+	"queries_failed_to_execute": 0,
+	"queries_failed_to_compute_similarity_id": 0,
+	"scan_id": "console",
+	"severity_counters": {
+		"HIGH": 9,
+		"INFO": 0,
+		"LOW": 1,
+		"MEDIUM": 4,
+		"TRACE": 0
+	},
+	"total_counter": 14,
+	"total_bom_resources": 0,
+	"start": "2022-03-25T18:23:07.449164254Z",
+	"end": "2022-03-25T18:24:26.67158377Z",
+	"paths": [
+		"/path"
+	],
+	"queries": [
+		{
+			"query_name": "Passwords And Secrets - Generic Token",
+			"query_id": "baee238e-1921-4801-9c3f-79ae1d7b2cbc",
+			"query_url": "https://kics.io/",
+			"severity": "HIGH",
+			"platform": "Common",
+			"cloud_provider": "COMMON",
+			"category": "Secret Management",
+			"description": "Query to find passwords and secrets in infrastructure code.",
+			"description_id": "d69d8a89",
+			"files": [
+				{
+					"file_name": "../../path/node_modules/compression/node_modules/debug/.coveralls.yml",
+					"similarity_id": "68d90777fe13a4326beea4f72bb9eaf2aad4819007b80bb8e570d86be73eca62",
+					"line": 1,
+					"issue_type": "RedundantAttribute",
+					"search_key": "",
+					"search_line": 0,
+					"search_value": "",
+					"expected_value": "Hardcoded secret key should not appear in source",
+					"actual_value": "'repo_token: SIAeZjKYlHK74rbcFvNHMUzjRiMpflxve' contains a secret"
+				},
+				{
+					"file_name": "../../path/node_modules/eslint-plugin-import/node_modules/debug/.coveralls.yml",
+					"similarity_id": "5db7a81fec873fddc32acf80beb618000f2b0f43a9482df45ad2b21d3c1152a4",
+					"line": 1,
+					"issue_type": "RedundantAttribute",
+					"search_key": "",
+					"search_line": 0,
+					"search_value": "",
+					"expected_value": "Hardcoded secret key should not appear in source",
+					"actual_value": "'repo_token: SIAeZjKYlHK74rbcFvNHMUzjRiMpflxve' contains a secret"
+				},
+				{
+					"file_name": "../../path/node_modules/body-parser/node_modules/debug/.coveralls.yml",
+					"similarity_id": "e91b87c622b8fb21393379be12af7e2b0e4de09f7c33cf01668ea09887213da3",
+					"line": 1,
+					"issue_type": "RedundantAttribute",
+					"search_key": "",
+					"search_line": 0,
+					"search_value": "",
+					"expected_value": "Hardcoded secret key should not appear in source",
+					"actual_value": "'repo_token: SIAeZjKYlHK74rbcFvNHMUzjRiMpflxve' contains a secret"
+				},
+				{
+					"file_name": "../../path/node_modules/detect-port-alt/node_modules/debug/.coveralls.yml",
+					"similarity_id": "2e58d40b4b6ee16bbe2b1339676f34f519f1d7f16323a09da74a39fd05abb21c",
+					"line": 1,
+					"issue_type": "RedundantAttribute",
+					"search_key": "",
+					"search_line": 0,
+					"search_value": "",
+					"expected_value": "Hardcoded secret key should not appear in source",
+					"actual_value": "'repo_token: SIAeZjKYlHK74rbcFvNHMUzjRiMpflxve' contains a secret"
+				},
+				{
+					"file_name": "../../path/node_modules/finalhandler/node_modules/debug/.coveralls.yml",
+					"similarity_id": "be406e01e8b1cfe95e7d7ea632dfb3757187201d4d9fe6b957b0df8a67b36e08",
+					"line": 1,
+					"issue_type": "RedundantAttribute",
+					"search_key": "",
+					"search_line": 0,
+					"search_value": "",
+					"expected_value": "Hardcoded secret key should not appear in source",
+					"actual_value": "'repo_token: SIAeZjKYlHK74rbcFvNHMUzjRiMpflxve' contains a secret"
+				},
+				{
+					"file_name": "../../path/node_modules/send/node_modules/debug/.coveralls.yml",
+					"similarity_id": "6da1594ac3d9c0ad29f50e52e436cae3e7e618dbbfe90fbafdf96acf8c625610",
+					"line": 1,
+					"issue_type": "RedundantAttribute",
+					"search_key": "",
+					"search_line": 0,
+					"search_value": "",
+					"expected_value": "Hardcoded secret key should not appear in source",
+					"actual_value": "'repo_token: SIAeZjKYlHK74rbcFvNHMUzjRiMpflxve' contains a secret"
+				},
+				{
+					"file_name": "../../path/node_modules/serve-index/node_modules/debug/.coveralls.yml",
+					"similarity_id": "9a6f3c9323ca8d33798a827a666343e2943af013ca532c69eb185a8902a78505",
+					"line": 1,
+					"issue_type": "RedundantAttribute",
+					"search_key": "",
+					"search_line": 0,
+					"search_value": "",
+					"expected_value": "Hardcoded secret key should not appear in source",
+					"actual_value": "'repo_token: SIAeZjKYlHK74rbcFvNHMUzjRiMpflxve' contains a secret"
+				},
+				{
+					"file_name": "../../path/node_modules/express/node_modules/debug/.coveralls.yml",
+					"similarity_id": "c3e30dd9767f6979c34dc7d55a23e6e397f36743fb0841c2a336bc5982f7c4b8",
+					"line": 1,
+					"issue_type": "RedundantAttribute",
+					"search_key": "",
+					"search_line": 0,
+					"search_value": "",
+					"expected_value": "Hardcoded secret key should not appear in source",
+					"actual_value": "'repo_token: SIAeZjKYlHK74rbcFvNHMUzjRiMpflxve' contains a secret"
+				},
+				{
+					"file_name": "../../path/node_modules/reusify/.coveralls.yml",
+					"similarity_id": "c4a9815210d23345f52eec885b4638018a688be1587a6628d809271fb569fa3a",
+					"line": 1,
+					"issue_type": "RedundantAttribute",
+					"search_key": "",
+					"search_line": 0,
+					"search_value": "",
+					"expected_value": "Hardcoded secret key should not appear in source",
+					"actual_value": "'repo_token: yIxhFqtaaz5iGVYfie9mODehFYogm8S8L' contains a secret"
+				}
+			]
+		},
+		{
+			"query_name": "Image Version Using 'latest'",
+			"query_id": "f45ea400-6bbe-4501-9fc7-1c3d75c32067",
+			"query_url": "https://docs.docker.com/develop/dev-best-practices/",
+			"severity": "MEDIUM",
+			"platform": "Dockerfile",
+			"category": "Supply-Chain",
+			"description": "When building images, always tag them with useful tags which codify version information, intended destination (prod or test, for instance), stability, or other information that is useful when deploying the application in different environments. Do not rely on the automatically-created latest tag",
+			"description_id": "22f535ec",
+			"files": [
+				{
+					"file_name": "../../path/node_modules/@surma/rollup-plugin-off-main-thread/Dockerfile",
+					"similarity_id": "2dab384f75339ba986ed7621623067eb5fb668bb0084362ed71263d89672f239",
+					"line": 1,
+					"issue_type": "IncorrectValue",
+					"search_key": "FROM={{selenium/node-chrome:latest}}",
+					"search_line": 0,
+					"search_value": "",
+					"expected_value": "FROM selenium/node-chrome:latest:'version' where version is not 'latest'",
+					"actual_value": "FROM selenium/node-chrome:latest'"
+				}
+			]
+		},
+		{
+			"query_name": "Last User Is 'root'",
+			"query_id": "67fd0c4a-68cf-46d7-8c41-bc9fba7e40ae",
+			"query_url": "https://docs.docker.com/engine/reference/builder/#user",
+			"severity": "MEDIUM",
+			"platform": "Dockerfile",
+			"category": "Best Practices",
+			"description": "Leaving the last user as root can cause security risks. Change to another user after running the commands the need privileges",
+			"description_id": "f445bd25",
+			"files": [
+				{
+					"file_name": "../../path/node_modules/@surma/rollup-plugin-off-main-thread/Dockerfile",
+					"similarity_id": "98b7ce7d11b9839777e9cb59e874a89080683f448204506367bd4d5f60ebfbad",
+					"line": 3,
+					"issue_type": "IncorrectValue",
+					"search_key": "FROM={{selenium/node-chrome:latest}}.{{USER root}}",
+					"search_line": 0,
+					"search_value": "",
+					"expected_value": "Last User isn't root",
+					"actual_value": "Last User is root"
+				}
+			]
+		},
+		{
+			"query_name": "Not Using JSON In CMD And ENTRYPOINT Arguments",
+			"query_id": "b86987e1-6397-4619-81d5-8807f2387c79",
+			"query_url": "https://docs.docker.com/engine/reference/builder/#entrypoint",
+			"severity": "MEDIUM",
+			"platform": "Dockerfile",
+			"category": "Build Process",
+			"description": "Ensure that we are using JSON in the CMD and ENTRYPOINT Arguments",
+			"description_id": "070b84da",
+			"files": [
+				{
+					"file_name": "../../path/node_modules/@surma/rollup-plugin-off-main-thread/Dockerfile",
+					"similarity_id": "06acbb38c46d7cb16dd1cdece8ef858595af6889a095d198eeb9b7877d8ce409",
+					"line": 20,
+					"issue_type": "IncorrectValue",
+					"search_key": "FROM={{selenium/node-chrome:latest}}.{{ENTRYPOINT source $NVM_DIR/nvm.sh \u0026\u0026 npm i \u0026\u0026 npm test}}",
+					"search_line": 0,
+					"search_value": "",
+					"expected_value": "FROM={{selenium/node-chrome:latest}}.{{ENTRYPOINT source $NVM_DIR/nvm.sh \u0026\u0026 npm i \u0026\u0026 npm test}} is in the JSON Notation",
+					"actual_value": "FROM={{selenium/node-chrome:latest}}.{{ENTRYPOINT source $NVM_DIR/nvm.sh \u0026\u0026 npm i \u0026\u0026 npm test}} isn't in the JSON Notation"
+				}
+			]
+		},
+		{
+			"query_name": "Update Instruction Alone",
+			"query_id": "9bae49be-0aa3-4de5-bab2-4c3a069e40cd",
+			"query_url": "https://docs.docker.com/develop/develop-images/dockerfile_best-practices/#run",
+			"severity": "MEDIUM",
+			"platform": "Dockerfile",
+			"category": "Build Process",
+			"description": "Instruction 'RUN \u003cpackage-manager\u003e update' should always be followed by '\u003cpackage-manager\u003e install' in the same RUN statement",
+			"description_id": "3785203d",
+			"files": [
+				{
+					"file_name": "../../path/node_modules/@surma/rollup-plugin-off-main-thread/Dockerfile",
+					"similarity_id": "3c6302e9060a700fdec2a38749b7b4d9a4e45b9e6281e49b3086b22f75f682db",
+					"line": 5,
+					"issue_type": "IncorrectValue",
+					"search_key": "FROM={{selenium/node-chrome:latest}}.RUN={{apt-get update -qqy   \u0026\u0026 rm -rf /var/lib/apt/lists/* /var/cache/apt/*   \u0026\u0026 rm /bin/sh \u0026\u0026 ln -s /bin/bash /bin/sh   \u0026\u0026 chown seluser /usr/local}}",
+					"search_line": 0,
+					"search_value": "",
+					"expected_value": "Instruction 'RUN \u003cpackage-manager\u003e update' is followed by 'RUN \u003cpackage-manager\u003e install' ",
+					"actual_value": "Instruction 'RUN \u003cpackage-manager\u003e update' isn't followed by 'RUN \u003cpackage-manager\u003e install in the same 'RUN' statement"
+				}
+			]
+		},
+		{
+			"query_name": "Healthcheck Instruction Missing",
+			"query_id": "b03a748a-542d-44f4-bb86-9199ab4fd2d5",
+			"query_url": "https://docs.docker.com/engine/reference/builder/#healthcheck",
+			"severity": "LOW",
+			"platform": "Dockerfile",
+			"category": "Insecure Configurations",
+			"description": "Ensure that HEALTHCHECK is being used. The HEALTHCHECK instruction tells Docker how to test a container to check that it is still working",
+			"description_id": "426121ee",
+			"files": [
+				{
+					"file_name": "../../path/node_modules/@surma/rollup-plugin-off-main-thread/Dockerfile",
+					"similarity_id": "c21c67c222e6415f1f3f99cf8cc1f3e1b0f63e8504b4aae44ba5a234295ea886",
+					"line": 1,
+					"issue_type": "MissingAttribute",
+					"search_key": "FROM={{selenium/node-chrome:latest}}",
+					"search_line": 0,
+					"search_value": "",
+					"expected_value": "Dockerfile contains instruction 'HEALTHCHECK'",
+					"actual_value": "Dockerfile doesn't contain instruction 'HEALTHCHECK'"
+				}
+			]
+		}
+	]
+}
