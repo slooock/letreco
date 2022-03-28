@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/letreco/static/css/main.b9f1faae.css",
-    "main.js": "/letreco/static/js/main.84a5210e.js",
-    "index.html": "/letreco/index.html"
+    "main.css": "/static/css/main.b9f1faae.css",
+    "main.js": "/static/js/main.84a5210e.js",
+    "index.html": "/index.html"
   },
   "entrypoints": [
     "static/css/main.b9f1faae.css",
