@@ -18,6 +18,11 @@
   color: #b4b4b4;
 }
 
+.text {
+  margin-bottom: 20px;
+  color: white;
+}
+
 .teclado {
   width: 100%;
 }
