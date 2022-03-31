@@ -68,8 +68,7 @@ function Game() {
     setSavedGame(SAVED_GAME_INIT);
   }
 
-  const [isEndGameScreenOpen, setIsEndGameScreenOpen] =
-    useState<boolean>(false);
+  const [isEndGameScreenOpen, setIsEndGameScreenOpen] = useState<boolean>(true);
 
   const dailyWord = useMemo<DailyWord>(() => {
     let word = getDailyWord();
@@ -300,7 +299,7 @@ function Game() {
           winState.isGameEnded && !isEndGameScreenOpen ? "pointer" : "default",
       }}
     >
-      {winState.isGameWon && (
+      {winState.isGameWon && isEndGameScreenOpen && (
         <EndGameScreen
           dailyWord={dailyWord}
           guesses={guesses}
