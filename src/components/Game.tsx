@@ -284,6 +284,9 @@ function Game() {
     setIsEndGameScreenOpen(false);
   };
 
+  useEffect(() => {
+    console.log(dailyWord);
+  }, []);
   return (
     <div
       className="mt-3 teclado"
@@ -297,7 +300,7 @@ function Game() {
           winState.isGameEnded && !isEndGameScreenOpen ? "pointer" : "default",
       }}
     >
-      {isEndGameScreenOpen && (
+      {winState.isGameWon && (
         <EndGameScreen
           dailyWord={dailyWord}
           guesses={guesses}
