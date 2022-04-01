@@ -49,7 +49,7 @@ export const dailyWords: DailyWordDatabase = {
     edition: "005",
     date: "2022-04-01",
     word: "KEREN",
-    question: "DICA: Oitava maravilha do mundo.",
+    question: "DICA: Todos keren mas um tem. A oitava maravilha do mundo.",
     response: "b",
   },
 };
