@@ -51,7 +51,7 @@ export const dailyWords: DailyWordDatabase = {
     question: "DICA: Mês do primeiro beijo",
     fraseInicio: "O beijo é uma linha que liga dois corações 😘",
     response:
-      "Seu desempenho até aqui foi ótimo. Busque sua recompensa em Rua Flor da Romã, 263 - Jardim Alvorada, Belo Horizonte - MG, 30810-430, no dia 31/03/2022 as 20 h",
+      "Seu desempenho até aqui foi ótimo. Busque sua recompensa em Rua Flor da Romã, 263 - Jardim Alvorada, Belo Horizonte - MG, 30810-430, no dia 31/03/2022",
   },
   "2022-04-01": {
     edition: "005",
