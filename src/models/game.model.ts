@@ -19,6 +19,7 @@ export interface DailyWord {
   word: string;
   question: string;
   response: string;
+  fraseInicio: string;
 }
 
 export interface DailyWordDatabase {

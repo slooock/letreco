@@ -7,12 +7,21 @@ import {
 } from "../hooks/useGlobalSettings";
 import { StatisticsContext, useStatistics } from "../hooks/useStatistics";
 import Button from "./Button";
-import { useState } from "react";
+import { useEffect, useMemo, useState } from "react";
+import { getDailyWord, getLast, getToday, wordList } from "../utils";
+import { DailyWord } from "../models";
 
 function App() {
   const globalSettings = useGlobalSettings();
   const statistics = useStatistics();
   const [explore, setExplore] = useState<boolean>(true);
+  const [frase, setFrase] = useState<string>("");
+
+  const dailyWord = useMemo<DailyWord>(() => {
+    let word = getDailyWord();
+    setFrase(word.fraseInicio);
+    return word;
+  }, []);
 
   return (
     <StatisticsContext.Provider value={statistics}>
@@ -20,11 +29,8 @@ function App() {
         <div className="app-container">
           {explore ? (
             <div>
-              <h1>A jornada</h1>
-              <div>
-                "Que haja uma luz nos lugares mais escuros, quando todas as
-                outras luzes se apagarem."
-              </div>
+              <h1>A jornada 💍</h1>
+              <div>{frase}</div>
               <div className="subTitle">
                 responda as perguntas e encontre seu destino.
               </div>
