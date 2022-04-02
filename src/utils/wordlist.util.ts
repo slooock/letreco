@@ -19719,4 +19719,5 @@ export const wordList: string[] = [
   "ALA",
   "ERU",
   "JANEIRO",
+  "AVELAR",
 ];

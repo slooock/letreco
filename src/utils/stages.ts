@@ -34,4 +34,9 @@ export const listStages: Stages = {
     text: "Aqui será onde vamos passar parte das nossas vidas, foi um passo muito importante para nós e dar esse passo foi uma maneira inconsciente de dizer que te amo e que quero passar o resto da minha vida com você...",
     next: "-19.8929019,-43.9854013",
   },
+  "5": {
+    id: "5",
+    text: "fim",
+    next: "-19.8929019,-43.9854013",
+  },
 };

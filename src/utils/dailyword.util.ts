@@ -13,7 +13,17 @@ export function getToday(): string {
 }
 
 export function getDailyWord(): DailyWord {
-  return dailyWords[getToday()];
+  let word = dailyWords[getToday()];
+  const url = window.location.href;
+  const etapa = url.split("=")[1];
+  if (etapa === "5") {
+    word.edition = "005";
+    word.word = "SIM";
+    word.question = "Quer casar comigo? DICA: SIM";
+    word.fraseInicio = "";
+    word.response = "";
+  }
+  return word;
 }
 
 export const dailyWords: DailyWordDatabase = {
@@ -65,10 +75,10 @@ export const dailyWords: DailyWordDatabase = {
   "2022-04-02": {
     edition: "006",
     date: "2022-04-02",
-    word: "KEREN",
-    question: "DICA: Todos keren mas um tem. A oitava maravilha do mundo.",
+    word: "AVELAR",
+    question: "DICA: Substantivo próprio que irá entrar no seu nome.",
     fraseInicio:
-      "Tudo se resume a ultima pessoa que você pensa a noite, é exatamente lá que seu coração está.",
+      "Se você me perguntar quando quero estar com você, minha resposta sempre será: agora e para sempre.",
     response: "",
   },
 };

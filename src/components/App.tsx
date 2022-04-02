@@ -7,7 +7,7 @@ import {
 } from "../hooks/useGlobalSettings";
 import { StatisticsContext, useStatistics } from "../hooks/useStatistics";
 import Button from "./Button";
-import { useEffect, useMemo, useState } from "react";
+import { useCallback, useEffect, useMemo, useState } from "react";
 import { getDailyWord, getLast, getToday, wordList } from "../utils";
 import { getStage, Stage } from "../utils/stages";
 import { DailyWord } from "../models";
@@ -23,7 +23,9 @@ function App() {
 
   const dailyWord = useMemo<DailyWord>(() => {
     let word = getDailyWord();
-    setFrase(word.fraseInicio);
+    if (word) {
+      setFrase(word.fraseInicio);
+    }
     return word;
   }, []);
 
@@ -33,16 +35,29 @@ function App() {
     const url = window.location.href;
     const etapa = url.split("=")[1];
     const resp = getStage(etapa);
-    console.log(resp);
+    // console.log(resp);
     setStage(resp);
-    console.log(new Date(), new Date(2022, 4, 2, 17, 30, 0));
   }, []);
+
+  const shuffle = useCallback(() => {
+    setFrase(
+      "A mais ou menos dois anos nos conhecemos e começamos a namorar, chegou a hora de dar um passo a frente, aqui está presente pessoas que amamos para testemunhar esse momento especial."
+    );
+  }, []);
+
+  useEffect(() => {
+    console.log(stage);
+    if (stage?.id === "5") {
+      localStorage.clear();
+      shuffle();
+    }
+  }, [stage?.id]);
 
   return (
     <StatisticsContext.Provider value={statistics}>
       <GlobalSettingsContext.Provider value={globalSettings}>
         <div className="app-container">
-          {new Date() > new Date(2022, 3, 2, 17, 30, 0) ? (
+          {new Date() > new Date(2022, 3, 2, 17, 0, 0) && stage?.id !== "5" ? (
             <div className="stage">
               <h2 className="title">Etapa {stage?.id}</h2>
               <div className="text">{stage?.text}</div>
@@ -50,7 +65,7 @@ function App() {
               <div>{stage?.next}</div>
             </div>
           ) : (
-            <div>
+            <div className="fullw">
               {explore ? (
                 <div>
                   <h1>A jornada 💍</h1>

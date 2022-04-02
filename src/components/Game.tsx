@@ -73,7 +73,7 @@ function Game() {
   const dailyWord = useMemo<DailyWord>(() => {
     let word = getDailyWord();
     WORD_SIZE = word.word.length;
-
+    console.log(WORD_SIZE);
     return word;
   }, []);
 
@@ -283,9 +283,6 @@ function Game() {
     setIsEndGameScreenOpen(false);
   };
 
-  useEffect(() => {
-    console.log(dailyWord);
-  }, []);
   return (
     <div
       className="mt-3 teclado"
