@@ -45,7 +45,7 @@ function App() {
             <div className="stage">
               <h2 className="title">Etapa {stage?.id}</h2>
               <div className="text">{stage?.text}</div>
-              <div className="next">Continue a jornada indo para</div>
+              <div className="next">Continue a jornada indo para </div>
               <div>{stage?.next}</div>
             </div>
           ) : (
