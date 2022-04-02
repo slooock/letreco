@@ -35,13 +35,14 @@ function App() {
     const resp = getStage(etapa);
     console.log(resp);
     setStage(resp);
+    console.log(new Date(), new Date(2022, 4, 2, 17, 30, 0));
   }, []);
 
   return (
     <StatisticsContext.Provider value={statistics}>
       <GlobalSettingsContext.Provider value={globalSettings}>
         <div className="app-container">
-          {new Date() > new Date(2022, 4, 2, 17, 30, 0) ? (
+          {new Date() > new Date(2022, 3, 2, 17, 30, 0) ? (
             <div className="stage">
               <h2 className="title">Etapa {stage?.id}</h2>
               <div className="text">{stage?.text}</div>
