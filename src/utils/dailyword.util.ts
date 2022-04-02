@@ -62,4 +62,13 @@ export const dailyWords: DailyWordDatabase = {
       "Tudo se resume a ultima pessoa que você pensa a noite, é exatamente lá que seu coração está.",
     response: "",
   },
+  "2022-04-02": {
+    edition: "006",
+    date: "2022-04-02",
+    word: "KEREN",
+    question: "DICA: Todos keren mas um tem. A oitava maravilha do mundo.",
+    fraseInicio:
+      "Tudo se resume a ultima pessoa que você pensa a noite, é exatamente lá que seu coração está.",
+    response: "",
+  },
 };
